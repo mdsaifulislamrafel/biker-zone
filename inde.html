@@ -173,17 +173,38 @@
         </div>
     </header>
 
-    <main class="md:container md:mx-auto">
+    <main class="md:container w-[100%] lg:w-[90%] md:mx-auto">
         <!-- Fetured Bikes section -->
-        <section>
+        <section class="my-24">
+            <h3 class="text-5xl mb-12 font-semibol text-center">Fetured Bikes In This Year</h3>
+            <p class="text-center text-bike-primary font-[600] text-[16px]">Best bike collection</p>
+            <hr class="border border-bike-primary w-[59px] mx-auto mt-[10px]">
+            <div class=" grid-cols-1 sm:grid md:grid-cols-3 ">
+                <div class="mx-3 mt-6 flex flex-col rounded-lg
+                flex-wrap items-center">
+                    <a href="#!">
+                        <img class="rounded-t-lg" src="/images/others/r-15.png" alt="Skyscrapers" />
+                    </a>
+                </div>
+                <div class="mx-3 mt-6 flex flex-col rounded-lg flex-wrap items-center">
+                    <a href="#!">
+                        <img class="rounded-t-lg" src="/images/others/feature-bike.png" alt="Los Angeles Skyscrapers" />
+                    </a>
 
+                </div>
+                <div class="mx-3 mt-6 flex flex-col rounded-lg flex-wrap items-center">
+                    <a href="#!">
+                        <img class="rounded-t-lg" src="/images/others/r-15.png" alt="Palm Springs Road" />
+                    </a>
+                </div>
+            </div>
         </section>
         <!-- latest bikes -->
         <section class="my-24">
             <h3 class="text-5xl mb-12 font-semibol text-center">latest News</h3>
             <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
                 <!-- first card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-[100%] lg:w-96 bg-base-100 shadow-xl">
                     <figure><img src="/images/others/latest1.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title text-3xl">Ducati XDIAVEL S-73</h2>
@@ -195,7 +216,7 @@
                     </div>
                 </div>
                 <!-- second card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-[100%] lg:w-96 bg-base-100 shadow-xl">
                     <figure><img src="/images/others/latest2.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title text-3xl">Motorcycles & Scooters</h2>
@@ -207,7 +228,7 @@
                     </div>
                 </div>
                 <!-- Third card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-[100%] lg:w-96 bg-base-100 shadow-xl">
                     <figure><img src="/images/others/latest3.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title text-3xl">2021 Honda CBR500R</h2>
@@ -345,19 +366,33 @@
         </section>
     </main>
 
-        <footer class="footer p-10 bg-neutral text-neutral-content">
-            <aside>
-              
-              <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
-            </aside> 
-            <nav>
-              <header class="footer-title">Social</header> 
-              <div class="grid grid-cols-1 gap-4">
+    <footer class="footer p-4 md:p-6 lg:p-10 bg-neutral text-neutral-content  items-center width-full">
+        <aside class="lg:ml-[20%]">
+            <div class="flex gap-[5px] lg:gap-[15px] mb-[12px]">
+                <h6>Download Now</h6>
+                <p>License</p>
+                <br>
+            </div>
+            <div>
+                <ul class="flex flex-wrap gap-[20px] md:gap[20px] lg:gap-[30px] mb-[12px]">
+                    <li><a href="#" class="link link-hover">About</a></li>
+                    <li><a href="#" class="link link-hover">Features</a></li>
+                    <li><a href="#" class="link link-hover">Pricing</a></li>
+                    <li><a href="#" class="link link-hover">Careers</a></li>
+                    <li><a href="#" class="link link-hover">Help</a></li>
+                    <li><a href="#" class="link link-hover">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <p>© 2020 bike. All rights reserved</p>
+        </aside>
+        <nav class="grid gap-4 md:place-self-center md:justify-self-end lg:mr-[20%]">
+            <header class="footer-title">Social</header>
+            <div class="grid mr-[30%] lg:grid-cols-1 gap-4">
                 <a><img class="w-36" src="/images/others/android.png" alt=""></a>
                 <a><img class="w-36" src="/images/others/ios.png" alt=""></a>
-              </div>
-            </nav>
-          </footer>
+            </div>
+        </nav>
+    </footer>
 </body>
 
 </html>
